@@ -1,0 +1,29 @@
+Basic learning principles:
+- opportunity for a neuron to dominate(abstract):
+  1). already established large connectivity
+  2). frequent firing to acquire connectivity
+  3). neurons can form a cluster that always fire together
+
+- opportunity to reconnect:
+  1). synapse weakens over time
+
+- neuron potential/energy
+  1). collect energy from links, based on link strength;
+  2). excite state if energy is larger than threshold;
+  3). available energy to distribute is based on state;
+  4). distribute available energy to all links
+  5). initial energy source : 
+      - inputs firing : strong
+      - random firing : weak
+
+- competition for new links
+  1). each excited neuron connects to the ones 
+      with highest energy from previous firing;
+  2). then collect/distribute new energy;
+  3). cool down after new connection of the next round
+
+- how to suppress duplicated firing?
+  If a pattern is already recognized, then do not allow
+  new neuron to repeat the same connectivity. Use a look-up table
+  of firing signatures; if same signature exist, higher energy
+  neuron survive.
